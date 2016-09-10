@@ -30,9 +30,9 @@ app.post('/',function(req,res){
     zip = new AdmZip("./uploads/"+ fileName);
     zipEntries = zip.getEntries();
     zipEntries.forEach(function(zipEntry) {
-        console.log(zipEntry.toString()); // outputs zip entries information 
+        //console.log(zipEntry.toString()); // outputs zip entries information 
         if (zipEntry.entryName == "fileName") {
-            console.log(zipEntry.data.toString('utf8')); 
+            //console.log(zipEntry.data.toString('utf8')); 
         }
     });
    // console.log(zip.readAsText("some_folder/my_file.txt")); 
